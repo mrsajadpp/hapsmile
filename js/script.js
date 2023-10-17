@@ -19,9 +19,9 @@ document.getElementById("generate-certificate").addEventListener("click", functi
         context.font = "bold 30px Arial";
         context.fillStyle = "#000";
         context.fillText(fullName, 205, 620); // Customize the position (x, y) for full name
-        context.fillText(category + ' Grade', 205, 695); // Customize the position for grade
+        context.fillText(category, 205, 695); // Customize the position for grade
         context.fillText(item, 205, 779); // Customize the position for item
-        context.fillText(grade, 205, 863); // Customize the position for school
+        context.fillText(grade + ' Grade', 205, 863); // Customize the position for school
         context.fillText(school, 205, 947); // Customize the position for category
 
         const imageReader = new FileReader();

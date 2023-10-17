@@ -6,7 +6,7 @@ body {
     justify-content: center;
 }
 
-/* input {
+input {
     width: 80%;
     outline: none;
     height: 40px;
@@ -36,7 +36,7 @@ button {
     color: #fff;
     align-items: center;
     justify-content: center;
-} */
+}
 
 #download-link {
     display: none;

@@ -13,23 +13,23 @@
     <input style="display: none;" type="file" id="image" accept="image/*"><br>
     <button onclick="document.getElementById('image').click()">SelectProfile</button><br>
 
-    <input type="text" id="full-name" placeholder="Name"><br>
+    <input type="text" id="full-name" placeholder="Name Like Elon Musk" value=""><br>
 
-    <input type="text" id="grade" placeholder="Grade"><br>
+    <input type="text" id="grade" placeholder="Grade Like A" value=""><br>
 
-    <input type="text" id="item" placeholder="Item"><br>
+    <input type="text" id="item" placeholder="Item Like Song" value=""><br>
 
-    <input type="text" id="school" placeholder="School"><br>
+    <input type="text" id="school" placeholder="School Like A.M.L.P School" value=""><br>
 
-    <input type="text" id="category" placeholder="Category"><br>
+    <input type="text" id="category" placeholder="Category Like UP" value=""><br>
 
     <button id="generate-certificate">Generate Poster</button><br>
 
-    <div id="certificate-container">
-        <a id="download-link" download="certificate.png"><button id="download-certificate">Download
-                Poster</button></a>
-        <img style="opacity: 0;" id="certificate-template" src="image.jpeg" alt="Certificate Template">
-    </div>
+    <a id="download-link" download="certificate.png">
+        <button id="download-certificate">Download
+            Poster</button>
+    </a>
+    <img style="opacity: 0;" id="certificate-template" src="image.jpeg" alt="Certificate Template">
     <script src="js/script.js"></script>
 </body>
 

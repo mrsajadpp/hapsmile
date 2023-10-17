@@ -18,11 +18,11 @@ document.getElementById("generate-certificate").addEventListener("click", functi
         context.drawImage(certificateTemplate, 0, 0);
         context.font = "bold 30px Arial";
         context.fillStyle = "#000";
-        context.fillText('Full Name: ' + fullName, 305, 599); // Customize the position (x, y) for full name
-        context.fillText('Grade: ' + grade + ' Grade', 305, 639); // Customize the position for grade
-        context.fillText('Item: ' + item, 305, 679); // Customize the position for item
-        context.fillText('School: ' + school, 305, 719); // Customize the position for school
-        context.fillText('Category: ' + category, 305, 759); // Customize the position for category
+        context.fillText(fullName, 205, 620); // Customize the position (x, y) for full name
+        context.fillText(category + ' Grade', 205, 695); // Customize the position for grade
+        context.fillText(item, 205, 779); // Customize the position for item
+        context.fillText(grade, 205, 863); // Customize the position for school
+        context.fillText(school, 205, 947); // Customize the position for category
 
         const imageReader = new FileReader();
         imageReader.onload = function () {
@@ -30,12 +30,12 @@ document.getElementById("generate-certificate").addEventListener("click", functi
             img.src = imageReader.result;
             img.onload = function () {
                 // Customize image position and size (x, y, width, height)
-                context.drawImage(img, 305, 300, 200, 200);
+                context.drawImage(img, 705, 465, 400,600);
 
                 const downloadLink = document.getElementById("download-link");
                 const certificateImage = canvas.toDataURL("image/png");
                 downloadLink.href = certificateImage;
-                downloadLink.style.display = "block";
+                downloadLink.style.display = "flex";
             };
         };
         imageReader.readAsDataURL(image);

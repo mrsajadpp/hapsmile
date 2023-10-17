@@ -27,5 +27,15 @@ button {
 }
 
 #download-link {
+    width: 83%;
+    outline: none;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    background-color: black;
+    color: #fff;
+}
+
+#download-link {
     display: none;
 }

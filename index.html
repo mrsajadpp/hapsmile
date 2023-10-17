@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Certificate Generator</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <h3>Poster Generator</h3>
+    <input style="display: none;" type="file" id="image" accept="image/*"><br>
+    <button onclick="document.getElementById('image').click()">SelectProfile</button><br>
+
+    <input type="text" id="full-name" placeholder="Name"><br>
+
+    <input type="text" id="grade" placeholder="Grade"><br>
+
+    <input type="text" id="item" placeholder="Item"><br>
+
+    <input type="text" id="school" placeholder="School"><br>
+
+    <input type="text" id="category" placeholder="Category"><br>
+
+    <button id="generate-certificate">Generate Poster</button>
+
+    <div id="certificate-container">
+        <a id="download-link" download="certificate.png"><button id="download-certificate">Download
+                Poster</button></a>
+        <img style="opacity: 0;" id="certificate-template" src="image.jpeg" alt="Certificate Template">
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
